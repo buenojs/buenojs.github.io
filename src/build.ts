@@ -1,4 +1,4 @@
-import { createSSG, type LayoutContext, type SiteConfig } from "../../bueno/src/ssg/index.ts";
+import { createSSG, type LayoutContext, type SiteConfig } from "@buenojs/bueno";
 import { Header } from "./components/header.ts";
 import { Footer } from "./components/footer.ts";
 import { Sidebar, type NavSection, type NavItem } from "./components/sidebar.ts";

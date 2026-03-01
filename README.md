@@ -1,2 +1,2 @@
-# bueno.github.io
+# buenojs.github.io
 Documentation for Bueno framework

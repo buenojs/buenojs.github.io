@@ -1,0 +1,223 @@
+/* ---------------------------------------------------------------------------
+   Prose typography for docs article content
+   Applied via .prose-bueno class on the <article> element
+   --------------------------------------------------------------------------- */
+
+.prose-bueno h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dark .prose-bueno h2 {
+  color: #f8fafc;
+  border-bottom-color: #1e293b;
+}
+
+.prose-bueno h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.dark .prose-bueno h3 {
+  color: #f8fafc;
+}
+
+.prose-bueno h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dark .prose-bueno h4 {
+  color: #e2e8f0;
+}
+
+.prose-bueno p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #475569;
+  margin-bottom: 1.25rem;
+}
+
+.dark .prose-bueno p {
+  color: #94a3b8;
+}
+
+.prose-bueno a {
+  color: #2badee;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-bueno a:hover {
+  color: #0e9acc;
+}
+
+.prose-bueno strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.dark .prose-bueno strong {
+  color: #f8fafc;
+}
+
+.prose-bueno em {
+  font-style: italic;
+}
+
+.prose-bueno ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #475569;
+}
+
+.dark .prose-bueno ul {
+  color: #94a3b8;
+}
+
+.prose-bueno ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #475569;
+}
+
+.dark .prose-bueno ol {
+  color: #94a3b8;
+}
+
+.prose-bueno li {
+  margin-bottom: 0.375rem;
+  line-height: 1.75;
+}
+
+.prose-bueno blockquote {
+  border-left: 4px solid #2badee;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  background: rgba(43, 173, 238, 0.05);
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #475569;
+  font-style: italic;
+}
+
+.dark .prose-bueno blockquote {
+  color: #94a3b8;
+  background: rgba(43, 173, 238, 0.08);
+}
+
+/* Inline code */
+.prose-bueno code:not(pre code) {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875em;
+  color: #2badee;
+  background: #f1f5f9;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+}
+
+.dark .prose-bueno code:not(pre code) {
+  background: #1e293b;
+}
+
+/* Code blocks */
+.prose-bueno pre {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.prose-bueno pre code {
+  font-family: 'JetBrains Mono', monospace;
+  color: #cbd5e1;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+/* Language label on code blocks */
+.prose-bueno pre[data-language]::before {
+  content: attr(data-language);
+  position: absolute;
+  top: -0.875rem;
+  left: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: #1e293b;
+  color: #64748b;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #334155;
+}
+
+/* Tables */
+.prose-bueno table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.prose-bueno th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.625rem 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.dark .prose-bueno th {
+  background: #1e293b;
+  color: #f8fafc;
+  border-bottom-color: #334155;
+}
+
+.prose-bueno td {
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+  vertical-align: top;
+}
+
+.dark .prose-bueno td {
+  border-bottom-color: #1e293b;
+  color: #94a3b8;
+}
+
+.prose-bueno tr:last-child td {
+  border-bottom: none;
+}
+
+.prose-bueno hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 2.5rem 0;
+}
+
+.dark .prose-bueno hr {
+  border-top-color: #1e293b;
+}
